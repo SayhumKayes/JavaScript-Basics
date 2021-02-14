@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread operator</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        // spread operator
+        function add(x, y, z) {
+            return x + y + z;
+        }
+        let numbers = [1, 2, 3];
+        document.write(`The sum : ` + add(...numbers) + `<br/>`);
+
+        // concatenate arrays using spread operators
+        let number1 = [1, 4, 6];
+        let number2 = [2, 3, 5];
+        let number = [...number1, ...number2];
+        document.write(`The number collection : ` + number);
+
+        // another 
+        let p1 = {
+            Name: 'Rahim',
+            Age: 30
+        }
+        let p2 = {
+            Name: 'Bangladeshi',
+            Occupation: 'student'
+        }
+        let p = { ...p1, ...p2 }
+        console.log(p);
+    </script>
+</body>
+
+</html>

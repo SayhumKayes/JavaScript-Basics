@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM in JavaScript</title>
+</head>
+
+<body>
+    <h1 id="heading1">This is a Heading</h1>
+    <h1 id="heading2">This is another Heading</h1>
+    <p id="para">This is a Paragraph</p>
+    <button>Click Me</button>
+    <button>Click Me</button>
+
+
+
+    <script>
+        var myheading1 = document.getElementById("heading1");
+        var myheading2 = document.getElementById("heading2");
+        var mypara = document.getElementById("para");
+
+        myheading1.innerHTML = "It is the first heading.";
+        // myheading1.style.border = "1px solid red";
+        // myheading1.style.color = "red";
+        myheading1.style.cssText = "color:red;border:1px solid red;";// use multiple style
+
+        myheading2.innerHTML = "It is the second heading.";
+        myheading2.style.backgroundColor = "red";
+        myheading2.style.color = "#fff";
+
+        mypara.innerHTML = "It is a paragraph.";
+        mypara.style.cssText = "font-size: 2rem";
+
+        var btn = document.getElementsByTagName("button")[0];
+        btn.style.cssText = "padding: 10px;color: white;background: blue;border: none;cursor: pointer;";
+    </script>
+</body>
+
+</html>

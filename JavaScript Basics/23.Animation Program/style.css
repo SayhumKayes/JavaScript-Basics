@@ -1,0 +1,11 @@
+.myButton
+{
+    width: 100px;
+    height: 60px;
+    background-color: chartreuse;
+}
+.ani
+{
+    box-shadow: 5px 5px 15px #60cf60;
+	opacity: 0.8;
+}

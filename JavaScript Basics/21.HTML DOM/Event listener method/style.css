@@ -1,0 +1,11 @@
+h1
+{
+    cursor: pointer;
+}
+.my_style
+{
+    color: rgb(255, 99, 71);
+    font-family: cursive;
+    font-size: 3rem;
+    cursor: pointer;
+}

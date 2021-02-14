@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+</head>
+
+<body>
+
+    <h1 id="heading1" class="my_class">This is first heading</h1>
+    <h1 id="heading2" class="my_class">This is second heading</h1>
+    <p id="para1" class="my_class">This is a paragraph</p>
+
+    <ul>
+        <li><a href="#">list - 1</a></li>
+        <li><a href="#">list - 2</a></li>
+        <li><a href="#">list - 3</a></li>
+    </ul>
+
+    <div class="my_div">
+        <a href="#" id="hover">this is a div</a>
+    </div>
+
+    <!-- JavaScript codes -->
+    <script>
+        // Query Selectors usage
+        var heading1 = document.querySelector("#heading1");
+        var heading2 = document.querySelector("#heading2");
+        var para1 = document.querySelector("#para1");
+        var my_class = document.querySelectorAll(".my_class")[1];
+        var ul = document.querySelectorAll("ul li a")[1];
+        var div = document.querySelector(".my_div");
+        var div_a = document.querySelector(".my_div a");
+
+        heading1.innerHTML = "First heading is changed";
+        heading1.style.color = "red";
+
+        heading2.innerHTML = "Second heading is changed";
+        heading1.style.color = "white";
+
+        para1.innerHTML = "paragraph is changed";
+
+        heading1.style.color = "blue";
+
+        my_class.style.background = "Yellow";
+
+        ul.style.color = "red";
+        ul.style.textDecoration = "none";
+
+        div.style.cssText = "background: skyblue;width: 300px;height: 300px;";
+
+        div_a.style.cssText = "text-decoration: none;color: white;";
+    </script>
+</body>
+
+</html>

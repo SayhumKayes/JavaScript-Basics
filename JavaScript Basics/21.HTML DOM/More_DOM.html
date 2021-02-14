@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding, Deleting, Removing elements</title>
+</head>
+<body>
+    
+    <div id="myDiv" style="background: chartreuse;">
+        <h1>This is a heading. </h1>
+        <h1>This is another heading. </h1>
+    </div>
+
+    <script>
+        // variables 
+        var myDiv = document.getElementById("myDiv");
+        var heading1 = document.getElementsByTagName("h1")[0];
+        var heading2 = document.getElementsByTagName("h1")[1];
+        var created_heading1 = document.createElement("h1");
+        var created_text1 = document.createTextNode("This is a created heading 1.");
+        var created_heading2 = document.createElement("p");
+        var created_text2 = document.createTextNode("This is a created paragraph text.");
+
+        // add elements
+        created_heading1.appendChild(created_text1);
+        myDiv.appendChild(created_heading1);
+        created_heading2.appendChild(created_text2);
+        myDiv.insertBefore(created_heading2, heading2);
+
+        // remove elements
+        myDiv.removeChild(heading2);
+
+        // edit texts
+        heading1.style.cssText = "color: blue;";
+        heading2.style.cssText = "color: grey;";
+        created_heading1.style.cssText = "color: red;";
+        created_heading2.style.cssText = "font-size: 1.2rem;font-weight: bold;color: darkorange;";
+    </script>
+</body>
+</html>

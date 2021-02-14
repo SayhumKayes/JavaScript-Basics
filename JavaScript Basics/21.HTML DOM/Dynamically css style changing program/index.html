@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic js changes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="my_div">
+        <ul>
+            <li><a href="#" onclick="Default()">Default</a></li>
+            <li>
+                <a href="#" onclick="Font_color()">Font color</a>
+                <div id="font_color_options" style="display: none;">
+                    <button onclick="red()">Red</button>
+                    <button onclick="green()">Green</button>
+                    <button onclick="blue()">Blue</button>
+                </div>
+            </li>
+            <li>
+                <a href="#" onclick="Font_family()">Font family</a>
+                <div id="font_family_options" style="display: none;">
+                    <button onclick="arial()">Arial</button>
+                    <button onclick="monospace()">Monospace</button>
+                    <button onclick="cursive()">Cursive</button>
+                </div>
+            </li>
+            <li>
+                <a href="#" onclick="Font_style()">Font style</a>
+                <div id="font_style_options" style="display: none;">
+                    <button onclick="normal()">Normal</button>
+                    <button onclick="italic()">Italic</button>
+                    <button onclick="oblique()">Oblique</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <h3 id="h3_Id">Change me from the default style!</h3>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

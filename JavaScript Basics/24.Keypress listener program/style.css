@@ -1,0 +1,12 @@
+.myButton
+{
+    width: 100px;
+    height: 60px;
+    background-color: chartreuse;
+    margin: 20px;
+}
+.animation
+{
+    box-shadow: 10px 10px 20px #60cf60;
+	opacity: 0.5;
+}

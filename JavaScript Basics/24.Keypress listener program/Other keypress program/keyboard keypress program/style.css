@@ -1,0 +1,53 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+.keyboardHeading
+{
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 0;
+}
+.myButton
+{
+    width: 50px;
+    height: 30px;
+    background-color: chartreuse;
+    margin: 5px;
+    border: none;
+}
+.animation
+{
+    box-shadow: 5px 5px 10px #60cf60;
+	opacity: 0.5;
+}
+textarea
+{
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 14px;
+}
+.keyboard
+{
+    width: 636px;
+    margin: 100px auto 0;
+    background: #111111;
+    border-radius: 15px;
+}
+.top
+{
+    margin: 0 auto;
+}
+.middle
+{
+    width: 595px;
+    margin: 0 auto;
+}
+.bottom
+{
+    width: 535px;
+    margin: 0 auto;
+}

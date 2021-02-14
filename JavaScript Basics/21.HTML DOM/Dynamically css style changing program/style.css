@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#my_div {
+    width: 20%;
+    float: left;
+    background-color: #7e7e7e;
+    padding: 0 0 50px;
+}
+
+#my_div ul {
+    list-style: none;
+}
+
+#my_div ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    color: #111111;
+    text-align: center;
+}
+
+#my_div ul li a:hover {
+    color: #ffffff;
+    background: #111111;
+}
+
+#font_color_options,
+#font_family_options,
+#font_style_options {
+    text-align: center;
+    background-color: #e6e6e6;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+
+#h3_Id {
+    width: 80%;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-left: 50px;
+    font-size: 1.5rem;
+}

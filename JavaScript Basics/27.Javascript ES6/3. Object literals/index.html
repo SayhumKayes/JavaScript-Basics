@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object literals</title>
+</head>
+
+<body>
+
+
+    <script>
+        // object literals 
+        function Info(name, age, occupation) {
+            return {
+                name, age, occupation
+            }
+        }
+        console.log(Info("Rahim", 20, "student"));
+
+        // default rule of declaring function in object
+        let message = {
+            body: function () {
+                return `I am learning js`
+            }
+        }
+        console.log(message.body());
+
+        // ES6 function in object
+        let message1 = {
+            body() {
+                return `I am learning js`
+            }
+        }
+        console.log(message1.body());
+
+        // In ES6 we can space between function name
+        let message2 = {
+            'body name'() {
+                return `I am learning js`
+            }
+        }
+        console.log(message2['body name']())
+
+    </script>
+</body>
+
+</html>
